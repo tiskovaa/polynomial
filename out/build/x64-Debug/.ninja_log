@@ -1,0 +1,5 @@
+# ninja log v6
+24	788	7643617197829564	test/CMakeFiles/test_polynomial.dir/test_main.cpp.obj	2e515ac65f7d711c
+27	892	7643617197869760	test/CMakeFiles/test_polynomial.dir/test_mlist.cpp.obj	ff87f81065d9c89c
+31	899	7643617197903746	test/CMakeFiles/test_polynomial.dir/test_polynomial.cpp.obj	17d8fdfa42ca6b6b
+8	1456	7643617197675585	gtest/CMakeFiles/gtest.dir/gtest-all.cc.obj	a17fcae01e64fdf

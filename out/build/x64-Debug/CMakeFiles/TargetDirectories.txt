@@ -1,0 +1,14 @@
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/include/CMakeFiles/polynomial.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/include/CMakeFiles/edit_cache.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/include/CMakeFiles/rebuild_cache.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/samples/CMakeFiles/sample_translator.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/samples/CMakeFiles/edit_cache.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/samples/CMakeFiles/rebuild_cache.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/gtest/CMakeFiles/gtest.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/gtest/CMakeFiles/edit_cache.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/gtest/CMakeFiles/rebuild_cache.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/test/CMakeFiles/test_polynomial.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/test/CMakeFiles/edit_cache.dir
+C:/Users/Nyush/OneDrive/Рабочий стол/polynomial/out/build/x64-Debug/test/CMakeFiles/rebuild_cache.dir
