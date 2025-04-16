@@ -154,13 +154,15 @@ public:
 			++(*this);
 			return tmp;
 		}
-		T& operator*() {
-			return ptr->value;
-		}
-		const T& operator*() const {
+		Node<T>& operator*() {
 			if (ptr == nullptr)
 				throw logic_error("error");
-			return ptr->value;
+			return *ptr;
+		}
+		const Node<T>& operator*() const {
+			if (ptr == nullptr)
+				throw logic_error("error");
+			return *ptr;
 		}
 		Node<T>* get_ptr() const noexcept { return ptr; }
 	};

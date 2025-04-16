@@ -87,63 +87,39 @@ public:
 
 	Polynom operator+ (const Polynom& p) {
 		Polynom res;
-		mlist::iterator it1 = begin();
-		mlist::iterator it2 = p.begin();
-		Node<Monom>* lastNode = nullptr;
-
+		mlist<Monom>::iterator it1 = begin();
+		mlist<Monom>::iterator it2 = p.begin();
+		mlist<Monom>::iterator res_it = res.end();
 		while (it1 != end() && it2 != p.end()) {
 			if ((*it1).degree == (*it2).degree) {
-				res.insert(*it1 + *it2, lastNode);
+				Monom sum = *it1 + *it2;
+				if (sum.k != 0) { 
+					res.insert(sum, res_it.get_ptr());
+					++res_it;
+				}
 				++it1;
 				++it2;
-				if (lastNode == nullptr) {
-					lastNode = res.begin().get_ptr();
-				}
-				else {
-					lastNode = lastNode->next;
-				}
 			}
 			else if ((*it1).degree < (*it2).degree) {
-				res.insert(*it1, lastNode);
+				res.insert(*it1, res_it.get_ptr());
+				++res_it;
 				++it1;
-				if (lastNode == nullptr) {
-					lastNode = res.begin().get_ptr();
-				}
-				else {
-					lastNode = lastNode->next;
-				}
 			}
 			else {
-				res.insert(*it2, lastNode);
+				res.insert(*it2, res_it.get_ptr());
+				++res_it;
 				++it2;
-				if (lastNode == nullptr) {
-					lastNode = res.begin().get_ptr();
-				}
-				else {
-					lastNode = lastNode->next;
-				}
 			}
 		}
 		while (it1 != end()) {
-			res.insert(*it1, lastNode);
+			res.insert(*it1, res_it.get_ptr());
+			++res_it;
 			++it1;
-			if (lastNode == nullptr) {
-				lastNode = res.begin().get_ptr();
-			}
-			else {
-				lastNode = lastNode->next;
-			}
 		}
-
 		while (it2 != p.end()) {
-			res.insert(*it2, lastNode);
+			res.insert(*it2, res_it.get_ptr());
+			++res_it;
 			++it2;
-			if (lastNode == nullptr) {
-				lastNode = res.begin().get_ptr();
-			}
-			else {
-				lastNode = lastNode->next;
-			}
 		}
 		return res;
 	}
